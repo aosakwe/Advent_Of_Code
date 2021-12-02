@@ -10,6 +10,7 @@ for line in input:
 		if int(line) > current_depth:
 			increases += 1
 	current_depth = int(line)
+input.close()
 print(str(increases)) 
 
 

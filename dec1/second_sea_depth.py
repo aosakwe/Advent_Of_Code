@@ -12,6 +12,7 @@ while i+4 <= len(depths):
 	if sum(depths[i+1:i+4]) > sum(depths[i:i+3]):
 		increases += 1  
 	i += 1
+input.close()
 print(str(increases)) 
 
 
