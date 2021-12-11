@@ -1,4 +1,5 @@
 ## Solution to Day 10 Puzzle ##
+library(stringr)
 
 input <- read.table("test.txt")
 
