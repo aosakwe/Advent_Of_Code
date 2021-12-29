@@ -18,12 +18,10 @@ bingo <- function(bingo_cards,nums){
 
 #Function to split data frame into tables
 make_tables <- function(x,data_list,rows){
-  i <- 1
   n <- (rows/5)
-  for (j in 1:n){
+  for (i in 1:n){
     data_list[[i]] <- x %>% slice(1:5)
     x <- x %>% slice(6:nrow(x))
-    i <- i + 1
   }
   return(data_list)
 }
